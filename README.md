@@ -49,3 +49,9 @@ run the following commands:
     msg1 = MSG1
     msg2 = MSG2
 
+
+## References
+
+[1] [Better types in C++11 - nullptr, enum classes (strongly typed enumerations) and cstdint](http://www.cprogramming.com/c++11/c++11-nullptr-strongly-typed-enum-class.html)
+
+[2] [The X Macro](http://www.drdobbs.com/cpp/the-x-macro/228700289)
