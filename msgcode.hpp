@@ -11,7 +11,7 @@
 // if you want to add prefix:
 //  #define MAKE_ENUM_CLASS(a) PREFIX_##a,
 #define MAKE_ENUM_CLASS(a) a,
-enum class MsgCode : std::uint32_t { FOR_ALL_MSGCODES(MAKE_ENUM_CLASS) };
+enum class MsgCode : std::uint16_t { FOR_ALL_MSGCODES(MAKE_ENUM_CLASS) };
 #undef MAKE_ENUM_CLASS
 
 extern const char* strmsgcode(MsgCode code);
