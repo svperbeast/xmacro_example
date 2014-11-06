@@ -7,11 +7,11 @@ static const char* msgcode_strings[] =
 
 const char* strmsgcode(MsgCode code)
 {
-    uint32_t c = enum_value(code);
+    std::uint16_t c = enum_value(code);
     return msgcode_strings[c];
 }
 
-const char* strmsgcode(uint32_t code)
+const char* strmsgcode(std::uint16_t code)
 {
     return msgcode_strings[code];
 }

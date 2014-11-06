@@ -15,6 +15,6 @@ enum class MsgCode : std::uint16_t { FOR_ALL_MSGCODES(MAKE_ENUM_CLASS) };
 #undef MAKE_ENUM_CLASS
 
 extern const char* strmsgcode(MsgCode code);
-extern const char* strmsgcode(uint32_t code);
+extern const char* strmsgcode(std::uint16_t code);
 
 #endif // !MSGCODE_INCLUDED
