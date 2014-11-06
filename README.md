@@ -29,7 +29,7 @@ enum class MsgCode : std::uint16_t { FOR_ALL_MSGCODES(MAKE_ENUM_CLASS) };
 and get the enum value like this:
 
 ```c++
-uint32_t msg1 = enum_value(MsgCode::MSG1);
+std::uint16_t msg1 = enum_value(MsgCode::MSG1);
 ```
 
 ## Compile
