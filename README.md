@@ -32,6 +32,10 @@ and get the enum value like this:
 std::uint16_t msg1 = enum_value(MsgCode::MSG1);
 ```
 
+```c++
+MsgCode mc = to_enum<MsgCode>(msg1);
+```
+
 ## Compile
 
 run the following commands:
@@ -49,6 +53,16 @@ run the following commands:
     msg1 = MSG1
     msg2 = MSG2
 
+## `to_enum`
+
+If the type of argument and the underlying type don't match, a message is
+printed similar to the one below:
+
+```
+...
+enum_utility.hpp:19:5: error: static assertion failed: requires 'x' is underlying type of enum.
+...
+```
 
 ## References
 
