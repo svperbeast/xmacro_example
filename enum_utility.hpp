@@ -18,7 +18,7 @@ E to_enum(T x)
 {
     static_assert(
             std::is_same<typename std::underlying_type<E>::type, T>::value,
-            "requires 'x' is underlying type of enum.");
+            "the argument type and the underlying type of enum don't match.");
     return static_cast<E>(x);
 }
 

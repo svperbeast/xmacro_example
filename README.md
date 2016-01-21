@@ -26,11 +26,13 @@ enum class MsgCode : std::uint16_t { FOR_ALL_MSGCODES(MAKE_ENUM_CLASS) };
 #undef MAKE_ENUM_CLASS
 ```
 
-and get the enum value like this:
+and get the value whose type is the underlying type like this:
 
 ```c++
 std::uint16_t msg1 = enum_value(MsgCode::MSG1);
 ```
+
+get the enum value from the value whose type is the underlying type:
 
 ```c++
 MsgCode mc = to_enum<MsgCode>(msg1);
@@ -47,7 +49,7 @@ run the following commands:
 
 ## Expected output
 
-`xmacro_example` will prints:
+`xmacro_example` will print:
 
     size of MsgCode is 2
     msg1 = MSG1
@@ -60,7 +62,7 @@ printed similar to the one below:
 
 ```
 ...
-enum_utility.hpp:19:5: error: static assertion failed: requires 'x' is underlying type of enum.
+enum_utility.hpp:19:5: error: static assertion failed: the argument type and the underlying type of enum don't match. 
 ...
 ```
 
